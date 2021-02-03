@@ -36,7 +36,7 @@
 
 ## Overview
 
-![screenshot](https://github.com/DejanSamardzija/My-Team-Page/blob/main/My&#32;Team&#32;Page/assets/img/my-team-page-medium-screen.png)
+![screenshot](https://github.com/DejanSamardzija/My-Team-Page/blob/main/My%20Team%20Page/assets/img/my-team-page-medium-screen%20.png)
 
 Responsive page using CSS3.
 
