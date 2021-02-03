@@ -8,7 +8,7 @@
 
 <div align="center">
   <h3>
-    <a href="#">
+    <a href="https://my-team-page-dev-challenges.netlify.app/">
       Demo
     </a>
     <span> | </span>
@@ -36,7 +36,7 @@
 
 ## Overview
 
-![screenshot](https://github.com/DejanSamardzija/404-Not-Found/blob/main/404/assets/img/my-team-page-medium-screen.png)
+![screenshot](https://github.com/DejanSamardzija/My-Team-Page/blob/main/My Team Page/assets/img/my-team-page-medium-screen.png)
 
 Responsive page using CSS3.
 
