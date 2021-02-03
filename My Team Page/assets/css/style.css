@@ -1,0 +1,209 @@
+/*-------------
+Content
+1. General Styles
+2. Header
+3. Section Team
+4. Footer
+5. Media Queries
+--------------*/
+
+/*-------------
+1. General Styles
+--------------*/
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 80%;
+  margin: 3rem auto 2rem auto;
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  font-family: 'PT Serif', serif;
+  font-size: 2.25rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-family: 'PT Serif', serif;
+  font-size: 0.625rem;
+  font-weight: 400;  
+  text-transform: uppercase;
+  padding-left: 0.125rem;
+}
+
+p {
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/*-------------
+2. Header
+--------------*/
+header {
+  width: 100%;
+  margin-bottom: 4rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+header h1,
+header article {
+  flex-basis: 50%;
+}
+
+/*-------------
+3. Section Team
+--------------*/
+.team {
+  margin: 1rem auto 1rem auto;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(auto, 1fr));
+  grid-gap: 2rem;
+}
+
+.member-card  {
+  display: flex;
+}
+
+.member-name {
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+
+.member-title {
+  writing-mode: vertical-rl;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.member-1 {
+  grid-row: 1 / span 5;
+  grid-column: 1 / 2;
+}
+
+.member-2 {
+  grid-row: 2 / span 5;
+  grid-column: 2 / 3;
+}
+
+.member-3 {
+  grid-row: 1 / span 5;
+  grid-column: 3 / 4;
+}
+
+.member-4 {
+  grid-row: 7 / span 5;
+  grid-column: 1 / 2;
+}
+
+.member-5 {
+  grid-row: 8 / span 5;
+  grid-column: 2 / 3;
+}
+
+.member-6 {
+  grid-row: 7 / span 5;
+  grid-column: 3 / 4;
+}
+
+/*-------------
+4. Footer
+--------------*/
+footer {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+footer h4 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/*-------------
+5. Media Queries
+--------------*/
+@media screen and (max-width: 900px) {
+  header {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 650px){
+  .team {
+    grid-template-columns: repeat(2, minmax(auto, 1fr));
+  }
+
+.member-name {
+    font-size: 0.875rem;
+  }
+
+.member-1 {
+  grid-column: 1 / 2;
+}
+
+.member-2 {
+  grid-column: 2 / 3;
+}
+
+.member-3 {
+  grid-row: 7 / span 5;
+  grid-column: 1 / 2;
+}
+
+.member-4 {
+  grid-row: 8 / span 5;
+  grid-column: 2 / 3;
+}
+
+.member-5 {
+  grid-row: 13 / span 5;
+  grid-column: 1 / 2;
+}
+
+.member-6 {
+  grid-row: 14 / span 5;
+  grid-column: 2 / 3;
+}
+}
+
+@media screen and (max-width: 400px) {
+  body {
+    margin: 2rem auto 1rem auto;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 0.75rem;
+  }
+}
